@@ -17,6 +17,8 @@ public class Principal {
         Punto verticeA;
         Punto verticeB;
         Punto verticeC;
+        double perimetroTotal = 0;
+        double media = 0;
         
         System.out.printf(ENUNCIADO);
         int num = Entrada.entero();
@@ -35,6 +37,13 @@ public class Principal {
             verticeC = arrayPunto[i];
             //Creamos una instancia de triángulo
             arrayTriangulo[i] = new Triangulo(verticeA, verticeB, verticeC);
+            //Vamos sumando los distintos perímetros para obtener el perímetro total de todos los triángulos
+            perimetroTotal += arrayTriangulo[i].getPerimetro();
+            //Calculamos la media de los perímetros
+            media = perimetroTotal / num;
+            /* Con la siguiente línea vamos imprimiendo los valores de cada uno de los triángulos
+            System.out.printf(i + 1 + arrayTriangulo[i].toString() + "Perimetro: " + arrayTriangulo[i].getPerimetro() + "%n");
+            */
            
         }
     
