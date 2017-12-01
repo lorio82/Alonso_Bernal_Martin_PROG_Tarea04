@@ -1,4 +1,3 @@
-
 package arrays;
 
 /**
@@ -9,13 +8,14 @@ package arrays;
  * @version: 11/2017
  */
 public class Triangulo {
+
     private Punto verticeA;
     private Punto verticeB;
     private Punto verticeC;
     private double x;
     private double y;
     private double perimetro;
-    
+
     /**
      * Método constructor Triangulo que recibe los parámetros verticeA, verticeB
      * y verticeC y les asigna como valor a cada uno de ellos una ocurrencia de
@@ -30,7 +30,7 @@ public class Triangulo {
         this.verticeB = new Punto(x, y);
         this.verticeC = new Punto(x, y);
     }
-    
+
     /**
      * Método que devuelve el valor de VerticeA.
      *
@@ -57,7 +57,7 @@ public class Triangulo {
     public Punto getVerticeC() {
         return verticeC;
     }
-    
+
     /**
      * Método que devuelve el el perímetro de una ocurrencia triángulo sumando
      * el resulado obtenido de aplicar el método distancia de los distintos
@@ -71,7 +71,7 @@ public class Triangulo {
 
         return perimetro;
     }
-    
+
     /**
      * Método que crea una cadena de caracteres con los atributos de un objeto
      * triángulo.

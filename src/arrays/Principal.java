@@ -20,6 +20,8 @@ public class Principal {
         Punto verticeB;
         Punto verticeC;
         double perimetroTotal = 0;
+        double perimetroMayor = 0;
+        double perimetroMenor = 0;
         double media = 0;
         int contMayor = 0;
         int contMenor = 0;
@@ -79,6 +81,7 @@ public class Principal {
         for (int i = 0; i < arrayTriangulo.length; i++) {
             if (arrayTriangulo[i].getPerimetro() == comparaMayor) {
                 trianguloMayor = arrayTriangulo[i].toString();
+                perimetroMayor = arrayTriangulo[i].getPerimetro();
                 numero = i + 1;
             }
         }
@@ -87,6 +90,7 @@ public class Principal {
 
             if (arrayTriangulo[i].getPerimetro() == comparaMenor) {
                 trianguloMenor = arrayTriangulo[i].toString();
+                perimetroMenor = arrayTriangulo[i].getPerimetro();
                 numeroMin = i + 1;
             }
         }
@@ -94,9 +98,9 @@ public class Principal {
         System.out.printf("La suma de todos los perímetros es %f. Y la media de los perimetros es%f%n"
                 + "Hay %d triángulo/s con un perímetro superior o igual a la media.%nHay %d triángulo/s con "
                 + "un perímetro menor a la media."
-                + "%nEl triángulo con el perímetro mayor es el número %d%n%s"
-                + "%nEl triángulo con el perímetro menor es el número %d%n%s",
-                perimetroTotal, media, contMayor, contMenor, numero, trianguloMayor, numeroMin, trianguloMenor);
+                + "%nEl triángulo con el perímetro mayor es el número %d%n%s%nCon un perímetro de %f"
+                + "%nEl triángulo con el perímetro menor es el número %d%n%s%nCon un perímetro de %f",
+                perimetroTotal, media, contMayor, contMenor, numero, trianguloMayor,perimetroMayor, numeroMin, trianguloMenor,perimetroMenor);
     }
 
 }

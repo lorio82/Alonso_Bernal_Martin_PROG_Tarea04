@@ -1,4 +1,3 @@
-
 package cadenas;
 
 import java.util.regex.Matcher;
@@ -13,6 +12,7 @@ import utilidades.Entrada;
  * @version: 11/2017
  */
 public class Ejercicio1 {
+
     public static void main(String[] args) {
         final String ENUNCIADO = "Introduzca una palabra y pulse enter para saber si es panvocálica";
 
@@ -28,5 +28,4 @@ public class Ejercicio1 {
             System.out.printf("No es panvcálica");
         }
     }
-    
 }
