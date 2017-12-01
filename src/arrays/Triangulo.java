@@ -14,6 +14,7 @@ public class Triangulo {
     private Punto verticeC;
     private double x;
     private double y;
+    private double perimetro;
     
     /**
      * Método constructor Triangulo que recibe los parámetros verticeA, verticeB
@@ -55,7 +56,21 @@ public class Triangulo {
      */
     public Punto getVerticeC() {
         return verticeC;
-    }  
+    }
+    
+    /**
+     * Método que devuelve el el perímetro de una ocurrencia triángulo sumando
+     * el resulado obtenido de aplicar el método distancia de los distintos
+     * objetos punto de cada uno de los vértices.
+     *
+     * @return perimetro double
+     */
+    public double getPerimetro() {
+
+        perimetro = verticeA.distancia(x) + verticeB.distancia(x) + verticeC.distancia(x);
+
+        return perimetro;
+    }
     
     /**
      * Método que crea una cadena de caracteres con los atributos de un objeto
