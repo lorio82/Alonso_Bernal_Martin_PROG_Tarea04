@@ -10,6 +10,7 @@ package arrays;
 public class Punto {
     private double x;
     private double y;
+    double distancia;
     
     /**
      * Método constructor Punto que recibe los parámetros x e y, y les asigna un número aleatorio entre 1 y 100
@@ -54,6 +55,22 @@ public class Punto {
         this.y = Math.random()*100;
     }
     
+    /**
+     * Método que establece la distancia entre este punto y otro punto aleatorio
+     * @param punto double.
+     * @return distancia double
+    */
+    public double distancia(double punto) {
+        
+        distancia = Math.sqrt(Math.pow(punto - this.x, 2) + Math.pow(punto - this.y, 2));
+
+        return distancia;
+    }
+    
+    /**
+     * Método que crea una cadena de caracteres con los valores de x e y.
+     * @return String  Devuelve una cadena de caracteres con los valores de x e y.  
+    */
     @Override
     public String toString() {
         return " x= " + x + ", y= " + y ;
