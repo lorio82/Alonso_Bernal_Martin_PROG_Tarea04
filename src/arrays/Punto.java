@@ -21,4 +21,37 @@ public class Punto {
         this.y = Math.random()*100;
     }
     
+    /**
+     * Método que devuelve el valor del número real almacenado en x.
+     * @return x double Coordenada x del punto
+    */
+    public double getX() {
+        return x;
+    }
+    /**
+     * Método que establece el valor del número real almacenado en x.
+     * Establece un número aleatorio comprendido entre 1 y 100.
+     * @param x double Coordenada x del punto.
+    */
+    public void setX(double x) {
+        this.x = Math.random()*100;
+    }
+
+    /**
+     * Método que devuelve el valor del número real almacenado en y.
+     * @return y double Coordenada y del punto
+    */
+    public double getY() {
+        return y;
+    }    
+
+    /**
+     * Método que establece el valor del número real almacenado en y.
+     * Establece un número aleatorio comprendido entre 1 y 100.
+     * @param y double Coordenada y del punto.
+    */
+    public void setY(double y) {
+        this.y = Math.random()*100;
+    }
+    
 }
