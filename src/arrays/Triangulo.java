@@ -30,4 +30,30 @@ public class Triangulo {
         this.verticeC = new Punto(x, y);
     }
     
+    /**
+     * Método que devuelve el valor de VerticeA.
+     *
+     * @return verticeA Punto Con sus coordenadas x,y
+     */
+    public Punto getVerticeA() {
+        return verticeA;
+    }
+
+    /**
+     * Método que devuelve el valor de VerticeB.
+     *
+     * @return verticeB Punto Con sus coordenadas x,y
+     */
+    public Punto getVerticeB() {
+        return verticeB;
+    }
+
+    /**
+     * Método que devuelve el valor de VerticeC.
+     *
+     * @return verticeC Punto Con sus coordenadas x,y
+     */
+    public Punto getVerticeC() {
+        return verticeC;
+    }   
 }
