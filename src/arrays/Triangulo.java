@@ -55,5 +55,17 @@ public class Triangulo {
      */
     public Punto getVerticeC() {
         return verticeC;
-    }   
+    }  
+    
+    /**
+     * Método que crea una cadena de caracteres con los atributos de un objeto
+     * triángulo.
+     *
+     * @return String Devuelve una cadena de caracteres con los valores de los
+     * atributos de un objeto triángulo.
+     */
+    @Override
+    public String toString() {
+        return "[verticeA (" + verticeA + ")" + ", verticeB (" + verticeB + ")" + ", verticeC (" + verticeC + ")] ";
+    }
 }
