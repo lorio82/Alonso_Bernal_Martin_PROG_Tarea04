@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package arrays;
 
 import utilidades.Entrada;
@@ -18,6 +14,9 @@ import utilidades.Entrada;
 public class Principal {
     public static void main(String[] args) {
         final String ENUNCIADO = "Introduzca el número de triángulos que desee crear";
+        Punto verticeA;
+        Punto verticeB;
+        Punto verticeC;
         
         System.out.printf(ENUNCIADO);
         int num = Entrada.entero();
@@ -27,6 +26,17 @@ public class Principal {
         
         //Creamos un array de objetos triángulo formado por el número de triángulos que desamos crear
         Triangulo[] arrayTriangulo = new Triangulo[num];
+        
+        //En este for recorremos el arrayTriangulo
+        for (int i = 0; i < arrayTriangulo.length; i++) {
+            //Le asignamos a cada uno de los vértices una instancia de punto
+            verticeA = arrayPunto[i];
+            verticeB = arrayPunto[i];
+            verticeC = arrayPunto[i];
+            //Creamos una instancia de triángulo
+            arrayTriangulo[i] = new Triangulo(verticeA, verticeB, verticeC);
+           
+        }
     
     }
     
