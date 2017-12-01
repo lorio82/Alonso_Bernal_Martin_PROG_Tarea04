@@ -54,4 +54,9 @@ public class Punto {
         this.y = Math.random()*100;
     }
     
+    @Override
+    public String toString() {
+        return " x= " + x + ", y= " + y ;
+    }
+    
 }
